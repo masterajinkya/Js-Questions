@@ -24,12 +24,8 @@
                     <p><strong>Object Literal Notation:</strong>
                         You can create an object using literal notation by defining its properties and values within
                         curly braces <code>{}</code>.</p>
-                    <pre><div class="bg-black rounded-md "><div class=" overflow-y-auto"><code class="!whitespace-pre hljs language-javascript"><span class="hljs-keyword">const</span> person = {
-                      <span class="hljs-attr">firstName</span>: <span class="hljs-string">"John"</span>,
-                      <span class="hljs-attr">lastName</span>: <span class="hljs-string">"Doe"</span>,
-                      <span class="hljs-attr">age</span>: <span class="hljs-number">30</span>,
-                    };
-                    </code></div></div></pre>
+                <img src="https://i.ibb.co/c6yb3zL/11.png" class="img-fluid mb-4" alt=""><br>
+
 
 
                 </li>
@@ -37,14 +33,8 @@
                     <p><strong>Constructor Function:</strong>
                         You can define a constructor function and then use the <code>new</code> keyword to create new
                         instances of the object.</p>
-                    <pre><div class="bg-black rounded-md mb-4"><div class="p-4 overflow-y-auto"><code class="!whitespace-pre hljs language-javascript"><span class="hljs-keyword">function</span> <span class="hljs-title function_">Person</span>(<span class="hljs-params">firstName, lastName, age</span>) {
-                      <span class="hljs-variable language_">this</span>.<span class="hljs-property">firstName</span> = firstName;
-                      <span class="hljs-variable language_">this</span>.<span class="hljs-property">lastName</span> = lastName;
-                      <span class="hljs-variable language_">this</span>.<span class="hljs-property">age</span> = age;
-                    }
+                <img src="https://i.ibb.co/sj5NDWw/12.png" class="img-fluid mb-4" alt=""><br>
 
-                    <span class="hljs-keyword">const</span> person = <span class="hljs-keyword">new</span> <span class="hljs-title class_">Person</span>(<span class="hljs-string">"John"</span>, <span class="hljs-string">"Doe"</span>, <span class="hljs-number">30</span>);
-                    </code></div></div></pre>
 
 
                 </li>
@@ -52,65 +42,36 @@
                     <p><strong>ES6 Class:</strong>
                         You can create objects using ES6 classes, which provide a more organized and class-based
                         approach to creating objects.</p>
-                    <pre><div class="bg-black rounded-md mb-4"><div class="p-4 overflow-y-auto"><code class="!whitespace-pre hljs language-javascript"><span class="hljs-keyword">class</span> <span class="hljs-title class_">Person</span> {
-                      <span class="hljs-title function_">constructor</span>(<span class="hljs-params">firstName, lastName, age</span>) {
-                        <span class="hljs-variable language_">this</span>.<span class="hljs-property">firstName</span> = firstName;
-                        <span class="hljs-variable language_">this</span>.<span class="hljs-property">lastName</span> = lastName;
-                        <span class="hljs-variable language_">this</span>.<span class="hljs-property">age</span> = age;
-                      }
-                    }
+                <img src="https://i.ibb.co/pnZGCq1/13.png" class="img-fluid mb-4" alt=""><br>
 
-                    <span class="hljs-keyword">const</span> person = <span class="hljs-keyword">new</span> <span class="hljs-title class_">Person</span>(<span class="hljs-string">"John"</span>, <span class="hljs-string">"Doe"</span>, <span class="hljs-number">30</span>);
-                    </code></div></div></pre>
                 </li>
                 <li>
                     <p><strong>Object.create():</strong>
                         You can create an object using the <code>Object.create()</code> method, which sets the prototype
                         of the new object.</p>
-                    <pre><div class="bg-black rounded-md mb-4"><div class="p-4 overflow-y-auto"><code class="!whitespace-pre hljs language-javascript"><span class="hljs-keyword">const</span> personPrototype = {
-                      <span class="hljs-attr">greet</span>: <span class="hljs-keyword">function</span>(<span class="hljs-params"></span>) {
-                        <span class="hljs-variable language_">console</span>.<span class="hljs-title function_">log</span>(<span class="hljs-string">`Hello, my name is <span class="hljs-subst">${<span class="hljs-variable language_">this</span>.firstName}</span> <span class="hljs-subst">${<span class="hljs-variable language_">this</span>.lastName}</span>.`</span>);
-                      },
-                    };
 
-                    <span class="hljs-keyword">const</span> person = <span class="hljs-title class_">Object</span>.<span class="hljs-title function_">create</span>(personPrototype);
-                    person.<span class="hljs-property">firstName</span> = <span class="hljs-string">"John"</span>;
-                    person.<span class="hljs-property">lastName</span> = <span class="hljs-string">"Doe"</span>;
-                    person.<span class="hljs-property">age</span> = <span class="hljs-number">30</span>;
-                    </code></div></div></pre>
+                <img src="https://i.ibb.co/7JrY8r6/14.png" class="img-fluid mb-4" alt=""><br>
+
                 </li>
                 <li>
                     <p><strong>Using Object.assign():</strong>
                         You can create a new object by copying the properties of existing objects using
                         <code>Object.assign()</code>.
                     </p>
-                    <pre><div class="bg-black rounded-md mb-4"><div class="p-4 overflow-y-auto"><code class="!whitespace-pre hljs language-javascript"><span class="hljs-keyword">const</span> personPrototype = {
-                      <span class="hljs-attr">firstName</span>: <span class="hljs-string">"John"</span>,
-                      <span class="hljs-attr">lastName</span>: <span class="hljs-string">"Doe"</span>,
-                    };
+                <img src="https://i.ibb.co/ZYpm0b2/Screenshot-1.png" class="img-fluid mb-4" alt=""><br>
 
-                    <span class="hljs-keyword">const</span> person = <span class="hljs-title class_">Object</span>.<span class="hljs-title function_">assign</span>({}, personPrototype, { <span class="hljs-attr">age</span>: <span class="hljs-number">30</span> });
-                    </code></div></div></pre>
                 </li>
                 <li>
                     <p><strong>Factory Functions:</strong>
                         Factory functions are functions that return objects. They allow you to encapsulate object
                         creation logic.</p>
-                    <pre><div class="bg-black rounded-md mb-4"><div class="p-4 overflow-y-auto"><code class="!whitespace-pre hljs language-javascript"><span class="hljs-keyword">function</span> <span class="hljs-title function_">createPerson</span>(<span class="hljs-params">firstName, lastName, age</span>) {
-                      <span class="hljs-keyword">return</span> {
-                        <span class="hljs-attr">firstName</span>: firstName,
-                        <span class="hljs-attr">lastName</span>: lastName,
-                        <span class="hljs-attr">age</span>: age,
-                      };
-                    }
+                <img src="https://i.ibb.co/9W1hNcs/15.png" class="img-fluid mb-4" alt=""><br>
 
-                    <span class="hljs-keyword">const</span> person = <span class="hljs-title function_">createPerson</span>(<span class="hljs-string">"John"</span>, <span class="hljs-string">"Doe"</span>, <span class="hljs-number">30</span>);
-                    </code></div></div></pre>
                 </li>
             </ol>
         </div>
         <div class="section-div">
-            <h5>2 How to create new objects in js? </h5>
+            <h5>2 What is prototype chain in js? </h5>
             <p><b>Ans:</b>
                 no
             </p>
