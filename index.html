@@ -24,7 +24,7 @@
                     <p><strong>Object Literal Notation:</strong>
                         You can create an object using literal notation by defining its properties and values within
                         curly braces <code>{}</code>.</p>
-                <img src="https://i.ibb.co/c6yb3zL/11.png" class="img-fluid mb-4" alt=""><br>
+                    <img src="https://i.ibb.co/c6yb3zL/11.png" class="img-fluid mb-4" alt=""><br>
 
 
 
@@ -33,7 +33,7 @@
                     <p><strong>Constructor Function:</strong>
                         You can define a constructor function and then use the <code>new</code> keyword to create new
                         instances of the object.</p>
-                <img src="https://i.ibb.co/sj5NDWw/12.png" class="img-fluid mb-4" alt=""><br>
+                    <img src="https://i.ibb.co/sj5NDWw/12.png" class="img-fluid mb-4" alt=""><br>
 
 
 
@@ -42,7 +42,7 @@
                     <p><strong>ES6 Class:</strong>
                         You can create objects using ES6 classes, which provide a more organized and class-based
                         approach to creating objects.</p>
-                <img src="https://i.ibb.co/pnZGCq1/13.png" class="img-fluid mb-4" alt=""><br>
+                    <img src="https://i.ibb.co/pnZGCq1/13.png" class="img-fluid mb-4" alt=""><br>
 
                 </li>
                 <li>
@@ -50,7 +50,7 @@
                         You can create an object using the <code>Object.create()</code> method, which sets the prototype
                         of the new object.</p>
 
-                <img src="https://i.ibb.co/7JrY8r6/14.png" class="img-fluid mb-4" alt=""><br>
+                    <img src="https://i.ibb.co/7JrY8r6/14.png" class="img-fluid mb-4" alt=""><br>
 
                 </li>
                 <li>
@@ -58,14 +58,14 @@
                         You can create a new object by copying the properties of existing objects using
                         <code>Object.assign()</code>.
                     </p>
-                <img src="https://i.ibb.co/ZYpm0b2/Screenshot-1.png" class="img-fluid mb-4" alt=""><br>
+                    <img src="https://i.ibb.co/ZYpm0b2/Screenshot-1.png" class="img-fluid mb-4" alt=""><br>
 
                 </li>
                 <li>
                     <p><strong>Factory Functions:</strong>
                         Factory functions are functions that return objects. They allow you to encapsulate object
                         creation logic.</p>
-                <img src="https://i.ibb.co/9W1hNcs/15.png" class="img-fluid mb-4" alt=""><br>
+                    <img src="https://i.ibb.co/9W1hNcs/15.png" class="img-fluid mb-4" alt=""><br>
 
                 </li>
             </ol>
@@ -73,7 +73,12 @@
         <div class="section-div">
             <h5>2 What is prototype chain in js? </h5>
             <p><b>Ans:</b>
-                no
+            <ul>
+                <li> The prototype chain is formed by linking objects to their prototypes. </li>
+                <li>The prototype chain is a mechanism that allows objects to inherit properties and methods from other objects</li>
+                <li>Every object can have exactly one prototype object. That prototype object can also have a prototype object, and so on</li>
+                <li>Each object has a private property which holds a link to another object called its prototype. That prototype object has a prototype of its own, and so on until an object is reached with null as its prototype. By definition, null has no prototype, and acts as the final link in this prototype chain.</li>
+            </ul>
             </p>
 
         </div>
@@ -82,43 +87,43 @@
             <p><b>Ans:</b>
             <p>JavaScript has several built-in data types, which can be categorized into two main categories:</p>
             </p>
-            <p><strong>Primitive Data Types:primitive | non-object | non-refrence-detatype </strong></p>
+            <p><strong>1. Primitive Data Types: Primitive | non-object | non-refrence-detatype </strong></p>
             <ol>
                 <li>
                     <p><strong>Number:</strong> Represents both integer and floating-point numbers. For example:
                         <code>42</code>, <code>3.14</code>.
                     </p>
-              <img src="https://i.ibb.co/qMJxXG5/number.png" class="img-fluid mb-4" alt=""><br>
+                    <img src="https://i.ibb.co/qMJxXG5/number.png" class="img-fluid mb-4" alt=""><br>
 
                 </li>
                 <li>
                     <p><strong>String:</strong> Represents sequences of characters. Enclosed in single or double quotes.
                         For example: <code>'Hello, world!'</code>, <code>"JavaScript"</code>.</p>
-              <img src="https://i.ibb.co/3kYQjx2/string.png" class="img-fluid mb-4" alt=""><br>
+                    <img src="https://i.ibb.co/3kYQjx2/string.png" class="img-fluid mb-4" alt=""><br>
 
                 </li>
                 <li>
                     <p><strong>Boolean:</strong> Represents <code>true</code> or <code>false</code> values, used for
                         logical operations. For example: <code>true</code>, <code>false</code>.</p>
-              <img src="https://i.ibb.co/TMxFXnW/Boolean.png" class="img-fluid mb-4" alt=""><br>
+                    <img src="https://i.ibb.co/TMxFXnW/Boolean.png" class="img-fluid mb-4" alt=""><br>
 
                 </li>
                 <li>
                     <p><strong>Undefined:</strong> Represents a variable that has been declared but has no value
                         assigned to it. Variables are initialized with <code>undefined</code> by default.</p>
-              <img src="https://i.ibb.co/MpG1Srv/undef.png" class="img-fluid mb-4" alt=""><br>
+                    <img src="https://i.ibb.co/MpG1Srv/undef.png" class="img-fluid mb-4" alt=""><br>
 
                 </li>
                 <li>
                     <p><strong>Null:</strong> Represents an intentional absence of value. It's often used to indicate
                         that a variable is intentionally empty or has no value.</p>
-              <img src="https://i.ibb.co/mNmXLr4/null.png" class="img-fluid mb-4" alt=""><br>
+                    <img src="https://i.ibb.co/mNmXLr4/null.png" class="img-fluid mb-4" alt=""><br>
 
                 </li>
                 <li>
                     <p><strong>Symbol (ES6):</strong> Represents a unique and immutable value, often used as object
                         property keys to avoid naming collisions.</p>
-              <img src="https://i.ibb.co/PWv9bj0/Screenshot-2.png" class="img-fluid mb-4" alt=""><br>
+                    <img src="https://i.ibb.co/PWv9bj0/Screenshot-2.png" class="img-fluid mb-4" alt=""><br>
 
                 </li>
                 <li>
@@ -126,36 +131,36 @@
                         with very large numbers beyond the capabilities of the <code>Number</code> type.</p>
                 </li>
             </ol>
-            <p><strong>Reference Data Types:non-premitive | object | refrence-detatype </strong></p>
+            <p><strong>2. Non-premitive Data Types: Reference Data Types | object | refrence-detatype </strong></p>
             <ol>
                 <li>
                     <p><strong>Object:</strong> Represents a collection of key-value pairs, where the keys are strings
                         (or Symbols) and the values can be of any data type, including other objects. Objects are
                         versatile and can hold functions, arrays, and other complex structures.</p>
-                        <img src="https://i.ibb.co/W52qmfm/obj.png" class="img-fluid mb-4" alt=""><br>
+                    <img src="https://i.ibb.co/W52qmfm/obj.png" class="img-fluid mb-4" alt=""><br>
                 </li>
                 <li>
                     <p><strong>Array:</strong> A specialized type of object that holds an ordered list of values. Arrays
                         are accessed using numeric indices, and they can hold values of mixed data types.</p>
-                        <img src="https://i.ibb.co/kXnb9Hd/array.png" class="img-fluid mb-4" alt=""><br>
+                    <img src="https://i.ibb.co/kXnb9Hd/array.png" class="img-fluid mb-4" alt=""><br>
 
                 </li>
                 <li>
                     <p><strong>Function:</strong> A type that represents executable code. Functions can be defined using
                         function declarations, function expressions, arrow functions, and more.</p>
-                        <img src="https://i.ibb.co/ZGzk4QD/function.png" class="img-fluid mb-4" alt=""><br>
+                    <img src="https://i.ibb.co/ZGzk4QD/function.png" class="img-fluid mb-4" alt=""><br>
 
                 </li>
                 <li>
                     <p><strong>Date:</strong> Represents date and time values, allowing manipulation and formatting of
                         dates and times.</p>
-                        <img src="https://i.ibb.co/4R21BPk/date.png" class="img-fluid mb-4" alt=""><br>
+                    <img src="https://i.ibb.co/4R21BPk/date.png" class="img-fluid mb-4" alt=""><br>
 
                 </li>
                 <li>
                     <p><strong>RegExp:</strong> Represents regular expressions, used for pattern matching and
                         manipulation of strings.</p>
-                        <img src="https://i.ibb.co/m4y3MS0/RegExp.png" class="img-fluid mb-4" alt=""><br>
+                    <img src="https://i.ibb.co/m4y3MS0/RegExp.png" class="img-fluid mb-4" alt=""><br>
 
                 </li>
                 <li>
@@ -290,7 +295,7 @@
                 </code></div>
         </div>
         <div class="section-div">
-            <h5>10 What is closures?</h5>
+            <h5>10 What is closures? && Q.82 Advantages of closure?</h5>
             <p><b>Ans:</b>
             <p>
                 A <strong>closure</strong> is a feature of JavaScript that allows inner functions to access the outer
@@ -309,6 +314,16 @@
               </code><div class="open_grepper_editor" title="Edit &amp; Save To Grepper"></div></pre>
 
             </p>
+            <img src="https://i.ibb.co/c81Tgx0/qwer.png" class="img-fluid mb-4" alt="">
+            <h5>Advantages</h5>
+            <ol class="">
+                <li><strong>Encapsulation</strong>: Closures allow you to create private variables and functions that can only be accessed from within the closure. This can help you improve the structure and modularity of your code.</li>
+                <li><strong>State retention</strong>: Closures allow you to retain the state of a function even after it has finished running. This can be handy for creating function factories or other patterns that rely on maintaining state across multiple function calls.</li>
+                <li><strong>Currying</strong>: Closures can help you create curried functions, which are functions that can be called with a partial set of arguments and then return a new function that expects the remaining arguments. This can make your code more flexible and reusable, which is always a good thing!</li>
+                <li><strong>Memorization</strong>: Closures can be used to implement the memorization technique, which allows a function to remember and reuse its previous results. This can help you improve the performance of your code.</li>
+                <li><strong>Asynchronous programming</strong>: Closures can simplify asynchronous programming by allowing you to define and execute callback functions or async logic within the context of the asynchronous operation, rather than having to define them separately and pass them around as arguments.</li>
+                <li><strong>Event handling</strong>: Closures can be used to create event handlers that have access to variables and functions defined in their parent scope. This can be really helpful for implementing complex event-driven behavior in your code.</li>
+                </ol>
 
         </div>
         <div class="section-div">
@@ -477,7 +492,8 @@
             <p><b>Ans:</b>
             <ol>
                 <li><strong>pending</strong>: Promise is still pending i.e. not fulfilled or rejected yet
-                    <strong>OR</strong> Wating for result</li>
+                    <strong>OR</strong> Wating for result
+                </li>
                 <li><strong>fulfilled</strong>: Action related to the promise succeeded <strong>OR</strong> Action
                     related to promise is success</li>
                 <li><strong>rejected</strong>: Action related to the promise failed <strong>OR</strong> Action related
@@ -500,16 +516,16 @@
 
         </div>
         <div class="section-div">
-            <h5>19  </h5>
+            <h5>19 </h5>
             <p><b>Ans:</b>
-            Repete
+                Repete
             </p>
 
         </div>
         <div class="section-div">
-            <h5>20  </h5>
+            <h5>20 </h5>
             <p><b>Ans:</b>
-            Repete
+                Repete
             </p>
 
         </div>
